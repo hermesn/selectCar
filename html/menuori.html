@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+     <title>slider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+        $(function(){
+            $('#div01').css({'float':'left','margin-top':'100px'}).hide();
+            $('#img01,#img02,#img03,#img04,#img05,#img06,#img07').css({'cursor':'pointer'});
+            $('#img01').click(function(){
+                $('#div01').fadeIn('slow');
+                $('#div2').fadeOut('slow');
+            });
+           
+        });
+     </script>
+<style type="text/css">
+
+         {
+  box-sizing: border-box;
+}
+
+        body {  background-image: url(fundo1.png);
+
+        }
+
+div#head2{
+            background: #009ACD; /* azul mais claro */
+            height: 70px ;
+            width: 1000px auto;
+            margin: 00px ;
+            padding: 01px ;
+            background-position: absolute;
+            top: 40px;
+            right: 100px;
+        }
+div#seach { 
+
+            background: blue; /* azul normal */
+            height: 1000px ;
+            margin: 5000px ;
+            padding: 10px ;
+            background-position: relative;
+            padding: 22px 24px 26px 20px;
+            top: 10px;
+
+}
+
+    /* todos os inputs de texto */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* configura um estilo para todos os botões */
+button {
+    background-color: blue;
+    color: white;
+    padding-top: auto;
+    margin: 8px 10px;
+    border: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* centraliza a imagem da div1*/
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/* set tamanho img da div1 */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* borda da div1 */
+.container {
+    padding: 16px;
+}
+
+/* deixa a div1 flutuante */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* conteiner da div1 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* botão fechar da div1 (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover;
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* entrada lenta da div1  */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+</style>
+
+</head>
+<body>
+
+    <img  id="img01" align="left" src="menu2.png" alt="Menu" width="40" height="40">
+        
+<div id="div01" class="modal" style="width:100px; height:440px;"> 
+    <form class="modal-content animate" action="/action_page.php">
+    <span onclick="document.getElementById('div01').style.display='none'" class="close" title="Fechar">&times;</span>
+<div class="imgcontainer"> <b>MENU</b>
+       
+    
+</div>
+    <div class="container" style="background-color:#f1f1f1">
+         <img width="50" height="50" id="img02" src="p1.png" title="Inicio">
+         <img width="50" height="50" id="img03" src="sal.png" title="Mais Visitados" >
+         <img width="50" height="50" id="img04" src="car.png" title="Favoritos" >
+         <img width="50" height="50" id="img05" src="price.png" title="Promoções" >
+         <img width="50" height="50" id="img06" src="homecar.png" title="Classe A" >
+         <img width="50" height="50" id="img07" src="conf.png" title="configurações">
+    </div>
+</div>
+
+
+     </body>
+     </html>
+
